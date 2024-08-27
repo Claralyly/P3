@@ -133,7 +133,7 @@
     
   }
   input {
-    padding: 15px 16px 15px 16px;
+   
     border: none;
     font-size: 18px;
     font-weight: 700;
@@ -487,54 +487,55 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (min-width: 320px) and (max-width: 767.98px) {
 /*Header*/
+    
     .header {
         display: flex;
         flex-direction: column;
         width: 375px;
-        height: 115px;
+        
     }
     .logo {
         display: flex;
         width: 61px;
         height: 19px;
-        padding-left: 50%;
+        padding-left: 170px;
     }
     .directionRow-nav {
-        display: flex;
-        justify-content: flex-start;
-        width: 375px;
-        padding-left: 50px;
-        gap: 115px;
+        gap: 0px;
+        
     }
     .navbutton {
-        padding-top: 20px;
-        border-top: 3px transparent;
+        padding-bottom: 15px;
+        border-top: none;
+        width: 50%;
+        text-align: center;
       }
       .navbutton:hover {
-        color: blue;
-        padding-top: 20px;
-        border-top: 3px solid blue;
+        border-bottom: 3px solid blue;
+        border-top: none;
       }
+     
 /* texte du haut*/
 h1  {
     width: 335px;
-    padding-left: 10px; 
-    padding-top: 15px; 
-    margin-bottom: -10px; 
-    margin-left: 20px; 
+    padding-left: 20px; 
+    padding-top: 10px; 
+    
 }
 p {
     width: 335px;
     height: 60px; 
-    padding-left: 10px; 
     margin-left: 20px;
+    
+}
+.card-title-hebergement {
+    padding-bottom: 0px;
 }
 /* search-bar */
     .section-form {
         width: 335px;
-        height: 49px;
-        border-radius: 15px;
-        margin-top: -25px;
+        
+        
         margin-left: 20px;
     }
     
@@ -542,6 +543,7 @@ p {
         background-color: var(--filter-bg-color);
 
     }
+   
     button[type="submit"] {
         width: 49px;
         height: 49px;
@@ -549,18 +551,24 @@ p {
 
     }
     
-    .loupe {
-        background-color: black;
-        width: 17px;
-        height: 17px;
+   
+    .fa-solid.fa-magnifying-glass {
+        background-color: #0065fc;
+        color: white;
+       
     }
+    .rechercher-btn .text {
+        display: none; 
+      }
+     
+    
 /*symbole button*/
 
     .symbole-button {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-left: 20px;
+        margin-left: 15px;
     }
     .animation-filtres {
         width: 162%;
@@ -569,14 +577,21 @@ p {
     .button-animation {
         width: 125px;
         height: 50px;
+        background-color: white;
     }
 /*texte info */
+
 .infoline {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 335px;
 height: 38px;
 margin-left: 20px;
+display: flex;
+        flex-direction: column-reverse;
+        
+        margin-top: 25px;
 
 }
 .text-info {
@@ -585,12 +600,16 @@ margin-left: 20px;
 /*Hebergement and populaire*/
 .hebergements-and-populaires {
     width: 375px;
-    height: 2019.5px;
-    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+    
+        
 }
 /* hebergement Marseille */
 .hebergements {
     width: 375px;
+    background-color: transparent !important;
    
 }
 .hebergements .h2 {
@@ -605,11 +624,11 @@ margin-left: 20px;
 }
 .card-hebergement {
     width: 335px;
-
 padding: 0px 0px 15px 0px;
 gap: 4px;
 
 margin-bottom: 10px;
+
 }
 .card-hebergement img {
    object-fit: cover;
@@ -622,18 +641,15 @@ margin-bottom: 10px;
 .card-txt-hebergement {
     width: 335px;
 height: 64.25px;
-
-
-
-
 }
 
 /* populaire */
 
 .populaires {
     width: 375px;
-    height: 569px;
-    gap: 15px;
+    box-sizing: content-box !important;
+    border-radius: 0 !important;
+    
     
 }
 .populaires-title {
@@ -649,13 +665,8 @@ height: 26px;
 
 }
 .populaires-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     width: 335px;
-height: 146px;
-border-radius: 20px 0px 0px 0px;
-
 
 }
 /*Activité*/
@@ -668,6 +679,7 @@ border-radius: 20px 0px 0px 0px;
     align-content: flex-start;
     align-items: flex-start;
     justify-content: flex-end;
+    margin-top: 50px;
 }  
 
 .activite {
